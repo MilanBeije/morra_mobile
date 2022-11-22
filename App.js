@@ -1,11 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
-import { Home } from "morra_components";
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { CustomButton } from 'morra_components';
 
 export default function App() {
   const prova = () => {
-    console.log("abdxsfsq");
-  };
+    console.log('abdxsfsq');
+  }
   return (
     <View style={styles.container}>
       <Text>vai o no</Text>
