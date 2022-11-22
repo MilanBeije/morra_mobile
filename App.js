@@ -1,10 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { CustomButton } from 'morra_components';
+import { CustomButton,GameResult } from 'morra_components';
+
 
 export default function App() {
   const prova = () => {
-    console.log('abdxsfsq');
+    console.log('va');
+    const risultato = GameResult(1,2)
+    console.log(risultato[0]);
   }
   return (
     <View style={styles.container}>
