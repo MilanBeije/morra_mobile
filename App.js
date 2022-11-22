@@ -1,10 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { CustomButton } from 'morra_components';
 
 export default function App() {
+  const prova = () => {
+    console.log('abdxsfsq');
+  }
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>vai o no</Text>
+      <CustomButton onClickCallback={prova}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -17,4 +22,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  button:{
+    backgroundColor:'red',
+    padding:10
+  }
 });
+
+
