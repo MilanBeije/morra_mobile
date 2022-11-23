@@ -1,16 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { CustomButton } from 'morra_components';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+
 
 export default function App() {
   const prova = () => {
-    console.log('abdxsfsq');
-  }
+    console.log("abdxsfsq");
+  };
   return (
     <View style={styles.container}>
-      <Text>vai o no</Text>
-      <Home />
-      <StatusBar style="auto" />
+      <Text>Inserisci la Login</Text>
     </View>
   );
 }
@@ -18,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "red",
     alignItems: "center",
     justifyContent: "center",
   },
