@@ -1,27 +1,30 @@
+// react
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+// react native
+import { SafeAreaView,StatusBar } from "react-native";
+// morra components
+import GameMobile from "./screen/GameMobile";
+import LoginMobile from "./screen/LoginMobile";
+// navigation
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+// creo lo stack
+const Stack = createNativeStackNavigator();
+
 
 
 export default function App() {
-  const prova = () => {
-    console.log("abdxsfsq");
-  };
+
   return (
-    <View style={styles.container}>
-      <Text>Inserisci la Login</Text>
-    </View>
+    <SafeAreaView style={{flex:1}}>
+    <StatusBar backgroundColor={'#F752E0'}/>
+    <NavigationContainer >
+      <Stack.Navigator screenOptions={{headerShown: true}}  initialRouteName='Login'>
+        <Stack.Screen name="LoginMobile" component={LoginMobile} />
+        <Stack.Screen name="GameMobile" component={GameMobile} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  button: {
-    backgroundColor: "red",
-    padding: 10,
-  },
-});
