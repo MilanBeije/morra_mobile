@@ -3,10 +3,10 @@ import React from 'react'
 // react native
 import {  View } from 'react-native'
 // morra component
-import {Game} from 'morra_components'
+// import {Game} from 'morra_components'
 
 
-const GameMobile = ({navigation}) => {
+const Ranking = ({navigation}) => {
 
     // const goBack = () => {
     //   navigation.goBack()
@@ -14,9 +14,9 @@ const GameMobile = ({navigation}) => {
 
     return (
       <View style={{flex:1}}>
-        <Game/>
+        {/* <Game/> */}
       </View>
     )
 }
 
-export default GameMobile
+export default Ranking
