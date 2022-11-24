@@ -7,7 +7,7 @@ import { Login } from "morra_components";
 
 const LoginMobile = ({ navigation }) => {
   const goToGame = () => {
-    navigation.navigate("BackgroundAnimation");
+    navigation.navigate("GameMobile");
   };
 
   return (
