@@ -1,9 +1,10 @@
 // react
 import React from "react";
 // react native
-import { View } from "react-native";
+import { View,ImageBackground,Image } from "react-native";
 // import login
 import {Login } from "morra_components";
+
 
 const LoginMobile = ({navigation}) => {
 
