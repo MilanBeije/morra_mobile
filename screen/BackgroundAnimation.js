@@ -52,7 +52,7 @@ const BackgroundAnimation = () => {
 
 const style = StyleSheet.create({
   image: {
-    zIndex: 10,
+    zIndex: -10,
     width: Dimensions.get("window").width + 2000,
     height: Dimensions.get("window").height,
   },
