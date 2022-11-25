@@ -15,7 +15,7 @@ const GameMobile = ({ navigation }) => {
   return (
     <View style={{ flex: 1 }}>
       <View style={{ zIndex: 10, flex: 1 }}>
-        <Game callback={goToRanking} />
+        <Game navigateToRankingCallback={goToRanking} />
       </View>
       <BackgroundAnimation />
     </View>
