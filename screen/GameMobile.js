@@ -8,14 +8,14 @@ import { Game } from "morra_components";
 import BackgroundAnimation from "./BackgroundAnimation";
 
 const GameMobile = ({ navigation }) => {
-  // const goBack = () => {
-  //   navigation.goBack()
-  // }
+  const goToRanking = () => {
+    navigation.navigate("RankingMobile");
+  };
 
   return (
     <View style={{ flex: 1 }}>
       <View style={{ zIndex: 10, flex: 1 }}>
-        <Game />
+        <Game callback={goToRanking} />
       </View>
       <BackgroundAnimation />
     </View>

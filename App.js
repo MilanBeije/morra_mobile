@@ -5,7 +5,7 @@ import { SafeAreaView, StatusBar } from "react-native";
 // morra components
 import GameMobile from "./screen/GameMobile";
 import LoginMobile from "./screen/LoginMobile";
-import BackgroundAnimation from "./screen/BackgroundAnimation";
+import RankingMobile from "./screen/RankingMobile";
 // navigation
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -19,14 +19,11 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator
           screenOptions={{ headerShown: true }}
-          initialRouteName="Login"
+          initialRouteName="LoginMobile"
         >
           <Stack.Screen name="LoginMobile" component={LoginMobile} />
           <Stack.Screen name="GameMobile" component={GameMobile} />
-          <Stack.Screen
-            name="BackgroundAnimation"
-            component={BackgroundAnimation}
-          />
+          <Stack.Screen name="RankingMobile" component={RankingMobile} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
