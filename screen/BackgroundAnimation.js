@@ -55,6 +55,8 @@ const style = StyleSheet.create({
     zIndex: -10,
     width: Dimensions.get("window").width + 2000,
     height: Dimensions.get("window").height,
+    opacity: 0.6,
+    backgroundColor: "black",
   },
 });
 export default BackgroundAnimation;

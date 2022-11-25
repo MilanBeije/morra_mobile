@@ -18,7 +18,7 @@
     "@react-navigation/web": "^1.0.0-alpha.9",
     "expo": "~47.0.7",
     "expo-status-bar": "~1.4.2",
-    "morra_components": "^0.12.7",
+    "morra_components": "^0.12.8",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
