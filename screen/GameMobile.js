@@ -14,10 +14,12 @@ const GameMobile = ({ navigation }) => {
 
   return (
     <View style={{ flex: 1,width:Dimensions.get("window").width,height:Dimensions.get("window").height }}>
-      <View style={{ zIndex: 10, flex: 1,height:'100%',width:'100%' }}>
+      <View style={{ zIndex: 10, flex: 1,height:Dimensions.get("window").height,width:'100%' }}>
         <Game navigateToRankingCallback={goToRanking} />
       </View>
-      <BackgroundAnimation />
+      <View style={{position:'absolute'}}>
+        <BackgroundAnimation />
+      </View>
     </View>
   );
 };

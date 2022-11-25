@@ -1,7 +1,7 @@
 // react
 import React from "react";
 // react native
-import { View } from "react-native";
+import { View ,Dimensions} from "react-native";
 // morra component
 import { Ranking } from "morra_components";
 
