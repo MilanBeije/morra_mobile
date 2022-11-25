@@ -11,7 +11,7 @@ const RankingMobile = ({ navigation }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
+    <View style={{ flex: 1,width:Dimensions.get("window").width,height:Dimensions.get("window").height }}>
       <Ranking callback={goToLogin} />
     </View>
   );
