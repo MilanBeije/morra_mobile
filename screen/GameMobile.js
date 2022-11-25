@@ -1,7 +1,7 @@
 // react
 import React from "react";
 // react native
-import { View } from "react-native";
+import { View, Dimensions } from "react-native";
 // morra component
 import { Game } from "morra_components";
 
@@ -13,8 +13,8 @@ const GameMobile = ({ navigation }) => {
   };
 
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{ zIndex: 10, flex: 1 }}>
+    <View style={{ flex: 1,width:Dimensions.get("window").width,height:Dimensions.get("window").height }}>
+      <View style={{ zIndex: 10, flex: 1,height:'100%',width:'100%' }}>
         <Game navigateToRankingCallback={goToRanking} />
       </View>
       <BackgroundAnimation />

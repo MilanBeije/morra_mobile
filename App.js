@@ -18,7 +18,7 @@ export default function App() {
       <StatusBar backgroundColor={"#F752E0"} />
       <NavigationContainer>
         <Stack.Navigator
-          screenOptions={{ headerShown: true }}
+          screenOptions={{ headerShown: false }}
           initialRouteName="LoginMobile"
         >
           <Stack.Screen name="LoginMobile" component={LoginMobile} />
